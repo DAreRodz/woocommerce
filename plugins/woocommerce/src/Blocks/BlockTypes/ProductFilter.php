@@ -121,7 +121,7 @@ final class ProductFilter extends AbstractBlock {
 		);
 
 		if ( ! isset( $block->context['queryId'] ) ) {
-			$attributes_data['data-wc-navigation-id'] = $this->generate_navigation_id( $block );
+			$attributes_data['data-wc-router-region'] = $this->generate_navigation_id( $block );
 		}
 
 		$tags = new WP_HTML_Tag_Processor( $content );
